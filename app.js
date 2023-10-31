@@ -1,11 +1,7 @@
 import express from "express";
 import cors from "cors"
-import connect from "./config/connect.js"
 import mainroute from "./routes/route.js"
-const app = express()
-
-
-app.use(connect)
+const app = express();
 app.use(
     express.urlencoded({
       extended: false,
