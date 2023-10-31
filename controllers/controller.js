@@ -73,7 +73,13 @@ export const getFingerPrintDetails = async ( req, res ) => {
 
 export const sendFingerPrintDetails = async ( req, res ) =>{
     try {
-        console.log("hi")
+        return res.status(200).json({
+            status: true,
+            message: "fingerprint details",
+            data: {
+                details: "https://sepolia.etherscan.io/tx/0x9d15b25b82c0141066a4e154318a6dc724a066d27698875e9277c6be7c1ab57d"
+            }
+            })  
     } catch (error) {
         return res.status(500).json({
             status: false,
