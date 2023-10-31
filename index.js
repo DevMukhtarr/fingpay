@@ -4,7 +4,7 @@ const port = process.env.PORT
 
 
 app.get("/", (req, res) =>{
-    res.send("Backend Boilerplate")
+    res.send("Fingpay api")
 })
 
 app.listen(port, () =>{
