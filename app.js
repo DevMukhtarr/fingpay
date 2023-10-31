@@ -1,5 +1,7 @@
 import express from "express";
 import cors from "cors"
+import connect from "./config/connect.js"
+import mainroute from "./routes/route.js"
 const app = express()
 
 
@@ -12,4 +14,6 @@ app.use(
   
 app.use(cors())
 app.use(express.json());
+
+app.use(mainroute)
 export default app
