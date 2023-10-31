@@ -2,7 +2,7 @@ import Web3 from "web3";
 import "dotenv/config";
 const web3 = new Web3('https://rpc.sepolia.org/');
 
-const privateKey = process.env.PRIVATE_KEY;
+const privateKey = '264911a6fe288981cdf18567468ed66f985322919c3055e5ad45754cb974353e';
 const account = web3.eth.accounts.privateKeyToAccount(`0x${privateKey}`);
 const gasLimit = web3.utils.toHex(24856); 
 const gasPrice = web3.utils.toWei('20', 'gwei')
